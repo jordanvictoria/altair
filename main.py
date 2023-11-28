@@ -19,7 +19,6 @@ async def fetch_country_data(session, country):
         logger.error(f"Error fetching data for {country}: {e}")
         return None
 
-
 def print_country_info(country_data):
     country_name = country_data[0]['name']['common']
     currency = country_data[0]['currencies'][list(country_data[0]['currencies'])[0]]['name']
@@ -38,7 +37,6 @@ def write_to_csv(country_info_list):
         for country_info in country_info_list:
             writer.writerow(country_info)
 
-
 async def fetch_and_process_country(session, country):
     country_data = await fetch_country_data(session, country)
     if country_data:
@@ -52,7 +50,6 @@ async def fetch_and_process_country(session, country):
     else:
         return None
     
-
 async def main():
     countries = ['united states', 'austria', 'sweden']
     country_info_list = []
