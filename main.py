@@ -33,7 +33,7 @@ def print_country_info(country_data):
 def write_to_csv(country_info_list):
     with open('country_info.csv', mode='w', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(['Country Name', 'Currency', 'Capital', 'Alternate Spellings'])
+        writer.writerow(['country_name', 'currency', 'capital', 'alt_spellings'])
         for country_info in country_info_list:
             writer.writerow(country_info)
 
@@ -51,7 +51,7 @@ async def fetch_and_process_country(session, country):
         return None
     
 async def main():
-    countries = ['united states', 'austria', 'sweden']
+    countries = ['united states of america', 'austria', 'sweden']
     country_info_list = []
 
     async with aiohttp.ClientSession() as session:

@@ -43,10 +43,10 @@ class TestCountryInfoFunctions(unittest.TestCase):
             ]))
 
             mock_print.assert_has_calls([
-                call("Country Name: Country1"),
-                call("Currency: Currency1"),
-                call("Capital: Capital1"),
-                call("Alternate Spellings: Alt1, Alt2"),
+                call("country_name: Country1"),
+                call("currency: Currency1"),
+                call("capital: Capital1"),
+                call("alt_spellings: Alt1, Alt2"),
             ], any_order=False)
 
     async def test_write_to_csv(self):
@@ -59,7 +59,7 @@ class TestCountryInfoFunctions(unittest.TestCase):
             mock_file.assert_called_with('country_info.csv', mode='w', newline='')
             handle = mock_file()
             handle.write.assert_called_with(
-                'Country Name,Currency,Capital,Alternate Spellings\n'
+                'country_name,currency,capital,alt_spellings\n'
                 'Country1,Currency1,Capital1,Alt1, Alt2\n'
                 'Country2,Currency2,Capital2,Alt3, Alt4\n'
             )

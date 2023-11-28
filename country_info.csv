@@ -1,4 +1,4 @@
-Country Name,Currency,Capital,Alternate Spellings
-United States Minor Outlying Islands,United States dollar,Washington DC,UM
+country_name,currency,capital,alt_spellings
+United States,United States dollar,"Washington, D.C.","US, USA, United States of America"
 Austria,Euro,Vienna,"AT, Osterreich, Oesterreich"
 Sweden,Swedish krona,Stockholm,"SE, Kingdom of Sweden, Konungariket Sverige"
