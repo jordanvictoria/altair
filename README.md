@@ -1,4 +1,4 @@
-# Altair Python Developer – Code Exam 1
+# Python Developer – Code Exam 1
 
 ### Objective
 The objective of this technical assessment was to create a Python script that asynchronously pulls data for three different countries from the RESTCountries API, returning the currency, capital, and alternate spellings for each country. In addition to meeting the core requirements, I also implemented unit and integration testing to ensure reliability of the script.
